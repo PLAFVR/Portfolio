@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: ปัญหาการนอนน้อย</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #334155;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #6366f1;
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .section-card {
+                padding: 1.5rem;
+            }
+            .grid-cols-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="gradient-bg py-12 rounded-b-3xl shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-5xl font-extrabold text-white mb-4 leading-tight">
+                <span class="block">Infographic</span>
+                <span class="block">ปัญหาการนอนน้อย</span>
+            </h1>
+            <p class="text-xl text-indigo-100 max-w-2xl mx-auto">
+                เข้าใจถึงผลกระทบ สาเหตุ และวิธีแก้ปัญหาการนอนน้อย เพื่อสุขภาพที่ดีขึ้นของคุณ
+            </p>
+        </div>
+    </div>
+
+    <div class="container mt-10">
+        <div class="section-card">
+            <div class="flex items-center mb-4">
+                <div class="icon-wrapper bg-red-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-2"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold ml-3 text-gradient">สถิติที่น่าตกใจ</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center mt-6">
+                <div class="p-6 bg-indigo-50 rounded-xl shadow-sm">
+                    <p class="text-5xl font-extrabold text-indigo-700 mb-2">1 ใน 3</p>
+                    <p class="text-lg font-medium text-gray-600">คนไทยนอนน้อยกว่า 7 ชั่วโมง</p>
+                </div>
+                <div class="p-6 bg-indigo-50 rounded-xl shadow-sm">
+                    <p class="text-5xl font-extrabold text-red-700 mb-2">+48%</p>
+                    <p class="text-lg font-medium text-gray-600">ความเสี่ยงโรคหัวใจจากการนอนน้อย</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="flex items-center mb-4">
+                <div class="icon-wrapper bg-yellow-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alert-triangle"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" x2="12" y1="9" y2="13"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold ml-3 text-gradient">ผลกระทบของการนอนน้อย</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+                <div>
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">ระยะสั้น</h3>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-indigo-500 mr-3 text-2xl">😴</span> อ่อนเพลีย ไม่มีแรง
+                        </li>
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-indigo-500 mr-3 text-2xl">😠</span> หงุดหงิดง่าย อารมณ์แปรปรวน
+                        </li>
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-indigo-500 mr-3 text-2xl">🧠</span> สมาธิสั้น ประสิทธิภาพการทำงานลดลง
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-red-600 mb-3">ระยะยาว</h3>
+                    <ul class="list-none space-y-3">
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-red-500 mr-3 text-2xl">⚖️</span> โรคอ้วน และน้ำหนักเพิ่มขึ้น
+                        </li>
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-red-500 mr-3 text-2xl">🩸</span> เบาหวาน และความดันโลหิตสูง
+                        </li>
+                        <li class="flex items-center text-lg text-gray-700">
+                            <span class="text-red-500 mr-3 text-2xl">😔</span> ภาวะซึมเศร้า และวิตกกังวล
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="flex items-center mb-4">
+                <div class="icon-wrapper bg-green-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-help-circle"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold ml-3 text-gradient">สาเหตุหลัก</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-6">
+                <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                    <p class="text-4xl mb-3">😩</p>
+                    <p class="text-xl font-semibold text-blue-700">ความเครียด</p>
+                    <p class="text-md text-gray-600">คิดมาก กังวล ทำให้หลับยาก</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                    <p class="text-4xl mb-3">📱</p>
+                    <p class="text-xl font-semibold text-blue-700">การใช้หน้าจอมากเกินไป</p>
+                    <p class="text-md text-gray-600">แสงสีฟ้าจากอุปกรณ์รบกวนการนอน</p>
+                </div>
+                <div class="p-6 bg-blue-50 rounded-xl shadow-sm">
+                    <p class="text-4xl mb-3">⏰</p>
+                    <p class="text-xl font-semibold text-blue-700">ตารางงานที่ไม่ปกติ</p>
+                    <p class="text-md text-gray-600">การทำงานเป็นกะ หรือเดินทางบ่อย</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card">
+            <div class="flex items-center mb-4">
+                <div class="icon-wrapper bg-purple-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-list-checks"><path d="m3 16 2 2 4-4"/><path d="m3 12 2 2 4-4"/><path d="m3 8 2 2 4-4"/><path d="M11 6h9"/><path d="M11 12h9"/><path d="M11 18h9"/></svg>
+                </div>
+                <h2 class="text-3xl font-bold ml-3 text-gradient">5 ขั้นตอนสู่การนอนหลับที่ดีขึ้น</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <div class="p-6 bg-purple-50 rounded-xl shadow-sm flex items-start">
+                    <span class="text-3xl font-bold text-purple-700 mr-4">1.</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-700 mb-1">เวลานอนที่สม่ำเสมอ</h3>
+                        <p class="text-md text-gray-600">เข้านอนและตื่นนอนเวลาเดิมทุกวัน แม้ในวันหยุด</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl shadow-sm flex items-start">
+                    <span class="text-3xl font-bold text-purple-700 mr-4">2.</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-700 mb-1">บรรยากาศห้องนอน</h3>
+                        <p class="text-md text-gray-600">ทำให้ห้องมืด เงียบ และเย็นสบาย</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl shadow-sm flex items-start">
+                    <span class="text-3xl font-bold text-purple-700 mr-4">3.</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-700 mb-1">หลีกเลี่ยงสิ่งกระตุ้น</h3>
+                        <p class="text-md text-gray-600">งดคาเฟอีน แอลกอฮอล์ และอาหารหนักก่อนนอน</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl shadow-sm flex items-start">
+                    <span class="text-3xl font-bold text-purple-700 mr-4">4.</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-700 mb-1">ออกกำลังกาย</h3>
+                        <p class="text-md text-gray-600">ออกกำลังกายสม่ำเสมอ แต่ไม่ควรใกล้เวลานอน</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl shadow-sm flex items-start">
+                    <span class="text-3xl font-bold text-purple-700 mr-4">5.</span>
+                    <div>
+                        <h3 class="text-xl font-semibold text-purple-700 mb-1">ผ่อนคลายก่อนนอน</h3>
+                        <p class="text-md text-gray-600">อ่านหนังสือ ฟังเพลงเบาๆ หรืออาบน้ำอุ่น</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gradient-bg py-8 mt-10 rounded-t-3xl text-center text-white">
+        <p class="text-lg">ดูแลการนอนหลับของคุณ เพื่อชีวิตที่ดีขึ้น</p>
+    </div>
+</body>
+</html>

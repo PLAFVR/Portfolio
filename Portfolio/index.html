@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pannawat A. - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #111827;
+            color: #E5E7EB;
+        }
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .section-title {
+            @apply text-3xl md:text-4xl font-bold text-center mb-12 text-white;
+        }
+        .progress-bar {
+            @apply w-full bg-gray-700 rounded-full h-2.5;
+        }
+        .progress-bar-inner {
+            @apply bg-cyan-500 h-2.5 rounded-full;
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors;
+        }
+        .mobile-nav-link {
+             @apply block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition-colors;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800/80 backdrop-blur-sm fixed w-full z-20 top-0 start-0 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-white font-bold text-xl">PANNAWAT A.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link">หน้าหลัก</a>
+                        <a href="#about" class="nav-link">เกี่ยวกับฉัน</a>
+                        <a href="#education" class="nav-link">ประวัติการศึกษา</a>
+                        <a href="#skills" class="nav-link">ทักษะ</a>
+                        <a href="#projects" class="nav-link">ผลงาน</a>
+                        <a href="#contact" class="nav-link">ติดต่อ</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i id="menu-icon-open" class="fas fa-bars h-6 w-6 block"></i>
+                        <i id="menu-icon-close" class="fas fa-times h-6 w-6 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link">หน้าหลัก</a>
+                <a href="#about" class="mobile-nav-link">เกี่ยวกับฉัน</a>
+                <a href="#education" class="mobile-nav-link">ประวัติการศึกษา</a>
+                <a href="#skills" class="mobile-nav-link">ทักษะ</a>
+                <a href="#projects" class="mobile-nav-link">ผลงาน</a>
+                <a href="#contact" class="mobile-nav-link">ติดต่อ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center text-center bg-gray-900">
+        <div class="max-w-3xl mx-auto px-4">
+             <img src="image/profile.png" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-cyan-500 shadow-lg">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                ปัณณวัฒน์ อัญลิสังกาศ
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300">
+                นักศึกษาชั้นปีที่ 1 สาขาวิทยาการคอมพิวเตอร์ ผู้หลงใหลในการพัฒนาเว็บแอปพลิเคชัน
+            </p>
+            <a href="#projects" class="mt-8 inline-block bg-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-600 transition-transform transform hover:scale-105">
+                ดูผลงานของฉัน
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section bg-gray-900">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="section-title">เกี่ยวกับฉัน</h2>
+            <div class="bg-gray-800 rounded-lg p-8 shadow-xl text-center">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    ชื่อ นายปัณณวัฒน์ อัญลิสังกาศ อายุ 21 ปี มีความสนใจในการสร้างและพัฒนาเว็บไซต์ เพื่อสร้างสรรค์ประสบการณ์ที่ดีให้กับผู้ใช้งาน เป้าหมายในอนาคตคือการได้นำความรู้ความสามารถมาใช้ในการทำงาน และใช้ชีวิตกับครอบครัวอย่างมีความสุข
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="section-title">ประวัติการศึกษา</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-600 before:to-transparent">
+                <!-- Item 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-cyan-500 bg-gray-800 text-cyan-500 group-hover:bg-cyan-500 group-hover:text-gray-800 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-all">
+                       <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-white text-xl">วิทยาลัยเทคนิคจันทบุรี</h3>
+                        <p class="text-gray-400">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</p>
+                        <p class="text-gray-300 mt-2">สาขาวิชาเทคโนโลยีสารสนเทศ (IT)</p>
+                    </div>
+                </div>
+                 <!-- Item 2 -->
+                 <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-cyan-500 bg-gray-800 text-cyan-500 group-hover:bg-cyan-500 group-hover:text-gray-800 shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 transition-all">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="font-bold text-white text-xl">มหาวิทยาลัยราชภัฏรำไพพรรณี</h3>
+                        <p class="text-gray-400">ระดับปริญญาตรี (กำลังศึกษา)</p>
+                        <p class="text-gray-300 mt-2">คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="section-title">ทักษะ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Category 1 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">ภาษาโปรแกรม</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>HTML</span> <span>95%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 95%"></div></div>
+                        </div>
+                        <div>
+                           <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>CSS</span> <span>90%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 90%"></div></div>
+                        </div>
+                         <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>Tailwind CSS</span> <span>85%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 85%"></div></div>
+                        </div>
+                        <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>C++</span> <span>70%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 70%"></div></div>
+                        </div>
+                        <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>Java</span> <span>65%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Category 2 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">การใช้โปรแกรม</h3>
+                     <div class="space-y-4">
+                        <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>Figma</span> <span>80%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 80%"></div></div>
+                        </div>
+                        <div>
+                           <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>Photoshop</span> <span>75%</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Category 3 -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-white mb-4">ภาษาต่างประเทศ</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="flex justify-between items-center mb-1 text-base font-medium text-cyan-400"><span>อังกฤษ (English)</span> <span>สื่อสารได้</span></span>
+                            <div class="progress-bar"><div class="progress-bar-inner" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="section-title">ผลงาน</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg group">
+                    <a href="performance/delivery_form.html">
+                        <img src="image/form.png" alt="ฟอร์มสั่งอาหารและเครื่องดื่ม" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">ฟอร์มสั่งอาหารและเครื่องดื่ม</h3>
+                            <p class="text-gray-400 mb-4">เว็บแอปพลิเคชันสำหรับสั่งอาหารพร้อมคำนวณราคาสุทธิแบบเรียลไทม์</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg group">
+                    <a href="performance/infographic.html">
+                        <img src="image/info.png" alt="Infographic ปัญหาการนอนน้อย" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Infographic: ปัญหาการนอนน้อย</h3>
+                            <p class="text-gray-400 mb-4">หน้าเว็บ Infographic ที่ให้ข้อมูลเกี่ยวกับผลกระทบและวิธีแก้ปัญหาการนอนน้อย</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg group">
+                    <a href="https://www.figma.com/design/MhYrJivpYkAjeRaGH2XDDg/Place?node-id=2-1285&p=f&t=dJG6vXrsTYdDUOxD-0"></a>
+                        <img src="image/figma.png" alt="เว็บแนะนำสถานที่ในมหาวิทยาลัย" class="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">เว็บแนะนำสถานที่ในมหาวิทยาลัย</h3>
+                            <p class="text-gray-400 mb-4">เว็บไซต์ให้ข้อมูลเกี่ยวกับพื้นที่สำคัญต่างๆ ภายในมหาวิทยาลัยราชภัฏรำไพพรรณี</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">HTML</span>
+                                <span class="bg-cyan-900/50 text-cyan-300 text-xs font-semibold px-2.5 py-0.5 rounded">CSS</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-gray-900">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="section-title">ช่องทางการติดต่อ</h2>
+            <p class="text-gray-400 mb-8">
+                สนใจร่วมงานหรือต้องการสอบถามเพิ่มเติม สามารถติดต่อได้ผ่านช่องทางด้านล่างนี้
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+                <a href="mailto:pan.kub.pan@gmail.com" class="text-gray-300 hover:text-cyan-400 transition-colors">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p class="mt-2 text-sm">pan.kub.pan@gmail.com</p>
+                </a>
+                <a href="tel:0656845475" class="text-gray-300 hover:text-cyan-400 transition-colors">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <p class="mt-2 text-sm">065-684-5475</p>
+                </a>
+                <a href="https://www.facebook.com/pannawat.anchalisangkard.9" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-cyan-400 transition-colors">
+                    <i class="fab fa-facebook fa-2x"></i>
+                    <p class="mt-2 text-sm">Pannawat Anchalisangkard</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            &copy; 2025 Pannawat Anchalisangkard. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
